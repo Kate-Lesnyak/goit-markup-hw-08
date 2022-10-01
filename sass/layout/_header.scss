@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) {
+	.menu-site-nav {
+		display: none;
+	}
+
+	.menu-contacts-header {
+		display: none;
+	}
+
+	.mobile-menu-open-button {
+		padding: 10px 0;
+		line-height: 0;
+		border: none;
+		background-color: transparent;
+
+		transition-property: fill;
+		transition: fill var(--transition-duration-function);
+
+		&:hover,
+		&:focus {
+			fill: var(--accent-color);
+		}
+	}
+}
+
+.page-header {
+	border-bottom: 1px solid var(--header-border-color);
+}
+
+.page-header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+	.mobile-menu-open-button {
+		display: none;
+	}
+
+	.main-nav {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-site-nav {
+		display: flex;
+		margin-left: 88px;
+	}
+
+	.menu-site-nav__item + .menu-site-nav__item {
+		margin-left: 50px;
+	}
+
+	.menu-site-nav__link {
+		display: block;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		font-weight: 500;
+		letter-spacing: 0.02em;
+		color: var(--title-text-color);
+		text-decoration: none;
+		transition-property: color;
+		transition: color var(--transition-duration-function);
+		line-height: 1.17;
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+
+	.menu-site-nav__link_current {
+		position: relative;
+		color: var(--accent-color);
+
+		&::after {
+			display: inline-block;
+			position: absolute;
+			content: "";
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 4px;
+			margin-bottom: -1px;
+			background-color: var(--accent-color);
+			border-radius: 2px;
+		}
+	}
+
+	.menu-contacts-header__button {
+		display: flex;
+		align-items: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-decoration: none;
+		@include font(12px, 500, 14px);
+		letter-spacing: 0.02em;
+
+		color: var(--primary-text-color);
+		transition-property: color;
+		transition: color var(--transition-duration-function);
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+
+	.icon-e-mail,
+	.icon-telefon {
+		margin-right: 8px;
+		fill: currentColor;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.menu-site-nav {
+		margin-left: 93px;
+	}
+
+	.menu-contacts-header {
+		display: flex;
+		align-items: center;
+
+		&__item + &__item {
+			margin-left: 30px;
+		}
+	}
+
+	.menu-contacts-header__button {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		@include font($fw: 500, $lh: 16px);
+	}
+
+	.icon-e-mail,
+	.icon-telefon {
+		margin-right: 10px;
+	}
+}

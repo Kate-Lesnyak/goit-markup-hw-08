@@ -1,0 +1,37 @@
+.logo {
+	@include font(24px, 700, 28px);
+	color: var(--title-text-color);
+	font-family: Raleway, sans-serif;
+	text-decoration: none;
+	transition-property: color;
+	transition: color var(--transition-duration-function);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
+	@media screen and (max-width: 767px) {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		@include font(26px, 700, 31px);
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+}
+
+.logo__accent {
+	color: var(--accent-color);
+}
+
+.logo_color_white {
+	color: var(--primary-white-color);
+}
