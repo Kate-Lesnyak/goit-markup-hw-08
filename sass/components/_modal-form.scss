@@ -121,9 +121,7 @@
 	margin-bottom: 30px;
 
 	@media screen and (min-width: 1200px) {
-		.modal-form__field-checkbox {
-			@include font();
-		}
+		@include font();
 	}
 }
 
