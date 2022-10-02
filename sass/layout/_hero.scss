@@ -52,7 +52,7 @@
 		height: 400px;
 
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("../../images/studio/tablet/hero/hero-tablet.jpg");
+			url("../images/studio/tablet/hero/hero-tablet.jpg");
 		background-size: 768px 400px;
 	}
 }
@@ -62,7 +62,7 @@
 	screen and (min-resolution: 2dppx) and (min-width: 768px) {
 	.hero-section {
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("../../images/studio/tablet/hero/hero-tablet@2x.jpg");
+			url("../images/studio/tablet/hero/hero-tablet@2x.jpg");
 	}
 }
 
@@ -74,7 +74,7 @@
 		padding: 200px 0;
 
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("../../images/studio/desktop/hero/hero-desktop.jpg");
+			url("../images/studio/desktop/hero/hero-desktop.jpg");
 		background-size: 1600px 600px;
 	}
 
@@ -89,6 +89,6 @@
 	screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	.hero-section {
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("../../images/studio/desktop/hero/hero-desktop@2x.jpg");
+			url("../images/studio/desktop/hero/hero-desktop@2x.jpg");
 	}
 }
