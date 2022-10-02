@@ -1,52 +1,29 @@
 .modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
 	padding: 40px;
 	border-radius: 4px;
 	background-color: var(--modal-background-color);
 	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-}
 
-// @media screen and (max-width: 767px) {
-// 	.modal {
-// 		position: relative;
-// 		margin: 0 auto;
-// 		max-width: 450px;
-// 		min-height: 609px;
-// 	}
-// }
+	transform: translate(-50%, -50%) scale(1);
+	transition-property: transform;
+	transition: transform var(--transition-duration-function);
 
-@media screen and (max-width: 767px) {
-	.modal {
-		position: absolute;
-		top: 93px;
-		transform: translateX(-50%) scale(1);
-		transition-property: transform;
-		transition: transform var(--transition-duration-function);
-
-		max-width: 450px;
-		min-height: 609px;
-
-		.backdrop.is-hidden & {
-			transform: translateX(-50%) scale(1.1);
-		}
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(1.1);
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
 	.modal {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%) scale(1);
-		transition-property: transform;
-		transition: transform var(--transition-duration-function);
-
-		.backdrop.is-hidden & {
-			transform: translate(-50%, -50%) scale(1.1);
-		}
+		width: 95%;
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
 	.modal {
 		width: 450px;
 		height: 609px;

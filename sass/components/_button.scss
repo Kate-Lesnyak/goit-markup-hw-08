@@ -7,7 +7,6 @@
 	min-width: 200px;
 	letter-spacing: 0.06em;
 	cursor: pointer;
-	transition: color var(--transition-duration-function),
-		background-color var(--transition-duration-function),
+	transition: color var(--transition-duration-function), background-color var(--transition-duration-function),
 		box-shadow var(--transition-duration-function);
 }
