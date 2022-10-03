@@ -368,7 +368,7 @@ b {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--primary-white-color);
   z-index: 100;
   opacity: 0;
@@ -388,6 +388,7 @@ b {
 
 .mobile-menu__container {
   position: relative;
+  height: 100%;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -408,8 +409,14 @@ b {
   fill: var(--accent-color);
 }
 
+.mobile-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .mobile-menu-nav {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-site-nav__item:not(:last-child) {
