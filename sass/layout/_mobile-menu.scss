@@ -105,19 +105,12 @@
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	color: var(--primary-text-color);
-
-	transition-property: color;
-	transition: color var(--transition-duration-function);
-
-	&:hover,
-	&:focus {
-		color: var(--accent-color);
-	}
 }
 
 .mobile-menu-contacts__button_tel {
 	@include font(34px, 500, 40px);
-
+	color: var(--accent-color);
+	
 	@media screen and (max-width: 479px) {
 		font-size: 25px;
 	}
@@ -153,15 +146,8 @@
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	padding: 10px;
-	color: var(--primary-text-color);
+	color: var(--accent-color);
 
-	transition-property: color;
-	transition: color var(--transition-duration-function);
-
-	&:hover,
-	&:focus {
-		color: var(--accent-color);
-	}
 	@media screen and (max-width: 479px) {
 		font-size: 11px;
 	}
